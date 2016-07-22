@@ -1,9 +1,9 @@
 sudo: false
 script:
   - |
+    echo "machine github.com\nlogin Tyriar\npassword $GITHUB_API_KEY" > ~/.netrc
     git config user.name "Sync agent"
     git config user.email "tyriar@tyriar.com"
-    curl https://api.github.com/?access_token=$GITHUB_API_KEY
     git remote add upstream https://github.com/Tyriar/wiki-sync-example.wiki.git
     git fetch upstream
     git push upstream HEAD:master
