@@ -4,8 +4,6 @@ script:
   git config user.email "tyriar@tyriar.com"
   git remote add upstream https://github.com/Tyriar/wiki-sync-example.wiki.git
   git fetch upstream
-  git merge upstream/master
-  git push origin HEAD:master
   git push upstream HEAD:master
 env:
   matrix:
