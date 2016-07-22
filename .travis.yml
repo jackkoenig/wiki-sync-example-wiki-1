@@ -1,11 +1,12 @@
+sudo: false
 script:
-- |
-  git config user.name "Sync agent"
-  git config user.email "tyriar@tyriar.com"
-  curl https://api.github.com/?access_token=$GITHUB_API_KEY
-  git remote add upstream https://github.com/Tyriar/wiki-sync-example.wiki.git
-  git fetch upstream
-  git push upstream HEAD:master
+  - |
+    git config user.name "Sync agent"
+    git config user.email "tyriar@tyriar.com"
+    curl https://api.github.com/?access_token=$GITHUB_API_KEY
+    git remote add upstream https://github.com/Tyriar/wiki-sync-example.wiki.git
+    git fetch upstream
+    git push upstream HEAD:master
 env:
   matrix:
   - secure: BcMDpF535yzRxtk4lhsqCbBCvsEi8nzYTiesCd2PJ3DEScArijqKgV3Jd0eUULJDu8v3tRCbM+xTFU+/IVv+CNIRIJ3RnYyKdak/MB0IUcd7q3aYFc+WoJfWPhx8DOgV+5Q07Cw9QcM5dp6oFmZUyKU/m92sjkselaj4eB9QK9iPw6qZCz/LNZtfIYt2X5Uq3fegOBEEcgNcSNzJuSIX7iufE9JXt+id7ssBwgSS/aQ+4T0DzO0o5rxKxJN4KxCzu0WSPng/4yZIQ5RF10wIUsumOUjALUv9yt8xYZ1ANS1homCLBhMA1/Q1atmLneOrADOz66AAPOwN8zLQVhdDTuO/i3bqEB4Z2P/i620MGx+dulPlzCFlnJu83NPtUBdsGeuSFKCcDsetmrxzNwrZZAck+wFgSAVUaODXo+PKyP9wvcHXGyHGY2pwyMD1y2nKrbM0/ZFJ9CZ6ifJJT+nwf7USjmyn4SGu1eyuArmM5EPtaXdnOvIN5zvqXkH05cgDmXHWW81DXD/umC+Ys4CBc8A9PJYAXaDTLjddt38R+ZgdqdejgIYpYOcEtkSqb64aEcsjEqavMvtN9cU6+ZMlYv3vm6FcFrbIhdHqpNb8EZkh3kcD+FAS47zar4oLpkfj9LpAW7lNAY09LM+Eqcm4MqnOBP/JTp/2IwfSM3WTteg=
