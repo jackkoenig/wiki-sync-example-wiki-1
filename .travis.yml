@@ -1,7 +1,7 @@
 script:
 - |
-  git config user.name <USER_NAME>
-  git config user.email <EMAIL>
+  git config user.name "Sync agent"
+  git config user.email "tyriar@tyriar.com"
   git remote add upstream https://@github.com/Tyriar/wiki-sync-example.wiki.git
   git fetch upstream
   git merge upstream/master
