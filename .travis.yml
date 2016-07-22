@@ -1,12 +1,12 @@
 sudo: false
 script:
-  - |
-    echo "machine github.com\nlogin Tyriar\npassword $GITHUB_API_KEY" > ~/.netrc
-    git config user.name "Sync agent"
-    git config user.email "tyriar@tyriar.com"
-    git remote add upstream https://github.com/Tyriar/wiki-sync-example.wiki.git
-    git fetch upstream
-    git push upstream HEAD:master
+- |
+  echo "machine github.com\nlogin Tyriar\npassword $GITHUB_API_KEY" > ~/.netrc
+  git config user.name "Sync agent"
+  git config user.email "tyriar@tyriar.com"
+  git remote add upstream https://github.com/Tyriar/wiki-sync-example.wiki.git
+  git fetch upstream
+  git push upstream HEAD:master
 env:
   matrix:
-  - secure: BcMDpF535yzRxtk4lhsqCbBCvsEi8nzYTiesCd2PJ3DEScArijqKgV3Jd0eUULJDu8v3tRCbM+xTFU+/IVv+CNIRIJ3RnYyKdak/MB0IUcd7q3aYFc+WoJfWPhx8DOgV+5Q07Cw9QcM5dp6oFmZUyKU/m92sjkselaj4eB9QK9iPw6qZCz/LNZtfIYt2X5Uq3fegOBEEcgNcSNzJuSIX7iufE9JXt+id7ssBwgSS/aQ+4T0DzO0o5rxKxJN4KxCzu0WSPng/4yZIQ5RF10wIUsumOUjALUv9yt8xYZ1ANS1homCLBhMA1/Q1atmLneOrADOz66AAPOwN8zLQVhdDTuO/i3bqEB4Z2P/i620MGx+dulPlzCFlnJu83NPtUBdsGeuSFKCcDsetmrxzNwrZZAck+wFgSAVUaODXo+PKyP9wvcHXGyHGY2pwyMD1y2nKrbM0/ZFJ9CZ6ifJJT+nwf7USjmyn4SGu1eyuArmM5EPtaXdnOvIN5zvqXkH05cgDmXHWW81DXD/umC+Ys4CBc8A9PJYAXaDTLjddt38R+ZgdqdejgIYpYOcEtkSqb64aEcsjEqavMvtN9cU6+ZMlYv3vm6FcFrbIhdHqpNb8EZkh3kcD+FAS47zar4oLpkfj9LpAW7lNAY09LM+Eqcm4MqnOBP/JTp/2IwfSM3WTteg=
+  - secure: EASJdYKXzpkzxQqEBzyO66yOEyumvqaR86EwDEckbgGWclCc5Zbgfa7B09oI1gAyj9Gw1tToRVnSVoqNrLG4J2c5rUpkyvxnhi/WMSwQwFWMYK6QAMTkUP/X44+pAj/4FFFiv565v4Yipn5sM/s5Lt4qC4jT8yqoAH+llDaqad85FxPlb3VDwDpsM2Gv450Z1Xi0BrELRT9241KRUCB1kGBSIeVFG5JJDdjVzZUQ5ernN3S0ibZ/kYEpl3dImrZpdaLfLsQUvL5YAftAtB+y/+uY4mO1g5bCpqUdy8OBcQXeODLsta7uXpNJoZkTNFzKFmwQ0PNVP9Zh1PEBDBypmBx8xRdawyKMvBBTch9VhEdZVMF4RdBgnYYdbDzjTaaEWYmWfREs/+hE6kfS8O5P2MTG/Y36rRsUWzTYu7w/n4d70RrQBh0M+5PqQ7Ik9anqBr8X+FDZ8TfHyEhVYHdc5TKvhMnuChHlgwrDYREApHMXFykB2U9hL+2c/t121sqPQuTPq2B8XMP65UcAh3nh+yPVT70FGhJLtqE08BGzubpq8Uishw6B4irWpXP3Acx/pPGiq7nOmHDKppZE4Rx9JRgkPle3bV4ZG038e/9oqMJaUeO2rkxtuh5FgusTDi2iEstczJg0yTG3xizjxRLt66wA/bVI4QgEAFPb/yxGHOY=
