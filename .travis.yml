@@ -1,0 +1,12 @@
+script:
+- |
+  git config user.name <USER_NAME>
+  git config user.email <EMAIL>
+  git remote add upstream https://@github.com/Tyriar/wiki-sync-example.wiki.git
+  git fetch upstream
+  git merge upstream/master
+  git push origin HEAD:master
+  git push upstream HEAD:master
+env:
+  matrix:
+    secure: ihOrn8hxiCf5vV8qUy/kSTCnUouLVAhs4BHAWeqOVFKAP1WHzvT7l7k/pvogXoxaenmUhAhojZK9Su8qzjPVATLivuC3V6CPgWG2CSYLY1QvtPSI3dJolmbAeQ4MA0R5bS1TifHZRRWYrSibn3cqHmGwsq4IOsGDEj9qu2JwYqq2qkJEfMkUGIfEgoKadoYn5bFB5aLZcZijqq9amePTHltjFiiJgOoskaew3NP/UyoZ6vBhdTwAXwd71HYNKaGuSJMaBW5jceV9/iBqzP+QRC/gNqFeO08TJO9VikslPj7OTuqRtG5ynwRVCskwIFP3nEUMGm5Jc8k/KaiSNULVWzh9wexCsDfaB7P/wY7DwyKiNqpZfRfvnuaiokeUBwy7z79vp7qVTs7kybMGeuT2NBjXzznGVoffv8rbPEY+1rZce9smBBE6a9gkVfAZiq5xO8NSJIeVqI4Lp6ibAPu16QixaBnkBXSxPN1IIxbwVGXFpX7lilIFlXbj8ynvlKD0I2EyWkGypm+Fp3tmJzTh/h+kaTEeHAAwZQPAY4MxBVskXFalnPKwC8r9pgLhe5cia7laQ+f1pIrgjNE8hmGEtMi+CGR/2+EwpmgRMpBH7HQhG8CH4WQoh3WU0zylSRYb5C5Y0R1/tnjPLF0QqgDjLjXo9qRyVyqtKc384Av8SGc=
