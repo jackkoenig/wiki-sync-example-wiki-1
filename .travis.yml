@@ -7,7 +7,7 @@ script:
   git remote add upstream https://$GITHUB_API_KEY@github.com/Tyriar/wiki-sync-example.wiki.git > /dev/null 2>&1 
   git fetch origin
   git fetch upstream
-  git merge upstream/master
+  git merge upstream/master --no-edit
   git push origin HEAD:master > /dev/null 2>&1
   git push upstream HEAD:master > /dev/null 2>&1
 env:
